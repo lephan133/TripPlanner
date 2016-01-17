@@ -81,8 +81,8 @@
                           ToolTipService.ToolTip="Click here to edit a plan"
                                                    Foreground="Black" Visibility="Collapsed"/>
             <AppBarButton x:ConnectionId='8' x:Name="cancelPlan"
-                          Icon="Cancel"
-                          Label="Cancel"
+                          Icon="Back"
+                          Label="Back"
                           ToolTipService.ToolTip="Click here cancel selection"
                                                    Foreground="Black" Visibility="Collapsed"/>
             
