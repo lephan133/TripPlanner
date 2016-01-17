@@ -1,0 +1,1 @@
+E:\TripPlanner\TripPlanner\TripPlanner\TripPlanner.csproj;x86
