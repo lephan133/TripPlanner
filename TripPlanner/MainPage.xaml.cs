@@ -36,5 +36,34 @@ namespace TripPlanner
         {
 
         }
+
+        private void addNewPlan_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void deletePlan_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void selectPlan_Click(object sender, RoutedEventArgs e)
+        {
+            addNewPlan.Visibility = Visibility.Collapsed;
+            selectPlan.Visibility = Visibility.Collapsed;
+            editPlan.Visibility = Visibility.Visible;
+            deletePlan.Visibility = Visibility.Visible;
+            cancelPlan.Visibility = Visibility.Visible;
+
+        }
+
+        private void cancelPlan_Click(object sender, RoutedEventArgs e)
+        {
+            addNewPlan.Visibility = Visibility.Visible;
+            selectPlan.Visibility = Visibility.Visible;
+            editPlan.Visibility = Visibility.Collapsed;
+            deletePlan.Visibility = Visibility.Collapsed;
+            cancelPlan.Visibility = Visibility.Collapsed;
+        }
     }
 }

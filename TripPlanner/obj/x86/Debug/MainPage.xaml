@@ -15,18 +15,18 @@
         </Grid.RowDefinitions>
         <RelativePanel>
             <StackPanel Orientation="Horizontal" Padding="5" BorderThickness="1" >
-                <Button Name="hamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36" Click="hamburgerButton_Click" Background="{x:Null}"/>
+                <Button x:ConnectionId='3' Name="hamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36"                               Background="{x:Null}"/>
                 <TextBlock Text="Home" FontFamily="Segoe UI" FontSize="30" Margin="20,5,0,0"/>
             </StackPanel>
         </RelativePanel>
-        <SplitView Name="mySplitView" 
+        <SplitView x:ConnectionId='1' Name="mySplitView" 
                    Grid.Row="1" 
                    OpenPaneLength="400" 
                    DisplayMode="CompactOverlay" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left">
             <SplitView.Pane>
-                <ListBox SelectionMode="Single" Name="menuItems" SelectionChanged="menuItems_SelectionChanged">
+                <ListBox x:ConnectionId='2' SelectionMode="Single" Name="menuItems"                                              >
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE81C;"/>
@@ -57,36 +57,37 @@
     </Grid>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="addNewPlan"
+            <AppBarButton x:ConnectionId='4' x:Name="addNewPlan"
                           Icon="Add"
                           Label="New"
                           ToolTipService.ToolTip="Click here to add a new trip plan."
-                          Click="addNewPlan_Click" Background="Transparent" Foreground="#FF00B83A"/>
-            <AppBarButton x:Name="selectPlan"
+                                                   Background="Transparent" Foreground="#FF00B83A"/>
+            <AppBarButton x:ConnectionId='5' x:Name="selectPlan"
                           Icon="SelectAll"
                           Label="Select"
                           ToolTipService.ToolTip="Click here to select s plan."
                           Background="Transparent"
-                          Click="selectPlan_Click"/>
+                                                  />
            
-            <AppBarButton x:Name="deletePlan"
+            <AppBarButton x:ConnectionId='6' x:Name="deletePlan"
                           Icon="Delete"
                           Label="Delete"
                           ToolTipService.ToolTip="Click here to deleted selected plans."
-                          Click="deletePlan_Click" Foreground="Red" Visibility="Collapsed"
+                                                   Foreground="Red" Visibility="Collapsed"
                           />
-            <AppBarButton x:Name="editPlan"
+            <AppBarButton x:ConnectionId='7' x:Name="editPlan"
                           Icon="Edit"
                           Label="Edit"
                           ToolTipService.ToolTip="Click here to edit a plan"
-                          Click="deletePlan_Click" Foreground="Black" Visibility="Collapsed"/>
-            <AppBarButton x:Name="cancelPlan"
+                                                   Foreground="Black" Visibility="Collapsed"/>
+            <AppBarButton x:ConnectionId='8' x:Name="cancelPlan"
                           Icon="Cancel"
                           Label="Cancel"
                           ToolTipService.ToolTip="Click here cancel selection"
-                          Click="cancelPlan_Click" Foreground="Black" Visibility="Collapsed"/>
+                                                   Foreground="Black" Visibility="Collapsed"/>
             
             
         </CommandBar>
     </Page.BottomAppBar>
 </Page>
+
