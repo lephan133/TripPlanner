@@ -194,3 +194,13 @@ E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\qualifiers.txt
 E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\qualifiers.txt.intermediate
 E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\ProjectArchitectures.txt
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\AddNewPlan.g.i.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\AddNewPlan.g.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\AddNewPlan.xaml
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\AddNewPlan.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\bin\x86\Debug\Pages\AddNewPlan.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.g.i.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.g.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.xaml
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\bin\x86\Debug\Pages\PlanDetails.xbf

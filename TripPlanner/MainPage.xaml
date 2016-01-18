@@ -21,7 +21,7 @@
         </RelativePanel>
         <SplitView Name="mySplitView" 
                    Grid.Row="1" 
-                   OpenPaneLength="400" 
+                   OpenPaneLength="370" 
                    DisplayMode="CompactOverlay" 
                    CompactPaneLength="0" 
                    HorizontalAlignment="Left">
@@ -29,26 +29,26 @@
                 <ListBox SelectionMode="Single" Name="menuItems" SelectionChanged="menuItems_SelectionChanged">
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE81C;"/>
-                            <TextBlock Text="Recent" FontFamily="Segoe" FontSize="24" Margin="10,5,0,0"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="25" Text="&#xE81C;"/>
+                            <TextBlock Text="Recent" FontFamily="Segoe" FontSize="20" Margin="10,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE00B;" Foreground="Red" SelectionHighlightColor="#FFFF0606"/>
-                            <TextBlock Text="Favorite" FontFamily="Segoe" FontSize="24" Margin="10,5,0,0"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="25" Text="&#xE00B;" Foreground="Red" SelectionHighlightColor="#FFFF0606"/>
+                            <TextBlock Text="Favorite" FontFamily="Segoe" FontSize="20" Margin="10,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE930;" Foreground="#FF17B63B"/>
-                            <TextBlock Text="Finished" FontFamily="Segoe" FontSize="24" Margin="10,5,0,0"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="25" Text="&#xE930;" Foreground="#FF17B63B"/>
+                            <TextBlock Text="Finished" FontFamily="Segoe" FontSize="20" Margin="10,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xEA39;" Foreground="#FFFF0606"/>
-                            <TextBlock Text="Overdue" FontFamily="Segoe" FontSize="24" Margin="10,5,0,0"/>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="25" Text="&#xEA39;" Foreground="#FFFF0606"/>
+                            <TextBlock Text="Overdue" FontFamily="Segoe" FontSize="20" Margin="10,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
