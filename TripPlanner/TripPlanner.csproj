@@ -98,12 +98,19 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\DayEvents.cs" />
     <Compile Include="Classes\Plans.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AddNewPlan.xaml.cs">
       <DependentUpon>AddNewPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DayEvents.xaml.cs">
+      <DependentUpon>DayEvents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewActivities.xaml.cs">
+      <DependentUpon>NewActivities.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PlanDetails.xaml.cs">
       <DependentUpon>PlanDetails.xaml</DependentUpon>
@@ -136,6 +143,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\AddNewPlan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DayEvents.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NewActivities.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

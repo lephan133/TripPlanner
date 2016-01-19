@@ -132,19 +132,23 @@ namespace TripPlanner.TripPlanner_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[7];
             _typeNameTable[0] = "TripPlanner.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "TripPlanner.Pages.AddNewPlan";
-            _typeNameTable[4] = "TripPlanner.Pages.PlanDetails";
+            _typeNameTable[4] = "TripPlanner.Pages.DayEvents";
+            _typeNameTable[5] = "TripPlanner.Pages.NewActivities";
+            _typeNameTable[6] = "TripPlanner.Pages.PlanDetails";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[7];
             _typeTable[0] = typeof(global::TripPlanner.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::TripPlanner.Pages.AddNewPlan);
-            _typeTable[4] = typeof(global::TripPlanner.Pages.PlanDetails);
+            _typeTable[4] = typeof(global::TripPlanner.Pages.DayEvents);
+            _typeTable[5] = typeof(global::TripPlanner.Pages.NewActivities);
+            _typeTable[6] = typeof(global::TripPlanner.Pages.PlanDetails);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +185,9 @@ namespace TripPlanner.TripPlanner_XamlTypeInfo
 
         private object Activate_0_MainPage() { return new global::TripPlanner.MainPage(); }
         private object Activate_3_AddNewPlan() { return new global::TripPlanner.Pages.AddNewPlan(); }
-        private object Activate_4_PlanDetails() { return new global::TripPlanner.Pages.PlanDetails(); }
+        private object Activate_4_DayEvents() { return new global::TripPlanner.Pages.DayEvents(); }
+        private object Activate_5_NewActivities() { return new global::TripPlanner.Pages.NewActivities(); }
+        private object Activate_6_PlanDetails() { return new global::TripPlanner.Pages.PlanDetails(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -215,9 +221,23 @@ namespace TripPlanner.TripPlanner_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  TripPlanner.Pages.PlanDetails
+            case 4:   //  TripPlanner.Pages.DayEvents
                 userType = new global::TripPlanner.TripPlanner_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_PlanDetails;
+                userType.Activator = Activate_4_DayEvents;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  TripPlanner.Pages.NewActivities
+                userType = new global::TripPlanner.TripPlanner_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_NewActivities;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  TripPlanner.Pages.PlanDetails
+                userType = new global::TripPlanner.TripPlanner_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_PlanDetails;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

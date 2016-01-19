@@ -40,12 +40,38 @@ namespace TripPlanner.Pages
 
         private void addNewPlan_Click(object sender, RoutedEventArgs e)
         {
+            bool validationLocationClear = true;
+            bool validationDateClear = true;
+            //check location not blank
             if (String.IsNullOrEmpty(planLocation.Text))
             {
                 Flyout myFlyout = Resources["validationFlyout"] as Flyout;
                 myFlyout.ShowAt(planLocation);
+                if(validationLocationClear == true)
+                {
+                    validationLocationClear = false;
+                }
             }
             else
+            {
+                validationLocationClear = true;
+            }
+            //Check End Date > Start Date
+            if(planStartDate.Date.DateTime.Date > planEndDate.Date.DateTime.Date)
+            {
+                Flyout dateValidationFlyout = Resources["endDateValidation"] as Flyout;
+                dateValidationFlyout.ShowAt(planStartDate);
+                if(validationDateClear == true)
+                {
+                    validationDateClear = false;
+                }
+            }
+            else
+            {
+                validationDateClear = true;
+            }
+
+            if(validationLocationClear == true & validationDateClear ==true)
             {
                 Plans plan = new Plans();
                 if (String.IsNullOrEmpty(planBudget.Text))

@@ -204,3 +204,13 @@ E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.g.cs
 E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.xaml
 E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\PlanDetails.xbf
 E:\TripPlanner\TripPlanner\TripPlanner\bin\x86\Debug\Pages\PlanDetails.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\DayEvents.g.i.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\DayEvents.g.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\NewActivities.g.i.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\NewActivities.g.cs
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\DayEvents.xaml
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\NewActivities.xaml
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\DayEvents.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\obj\x86\Debug\Pages\NewActivities.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\bin\x86\Debug\Pages\DayEvents.xbf
+E:\TripPlanner\TripPlanner\TripPlanner\bin\x86\Debug\Pages\NewActivities.xbf

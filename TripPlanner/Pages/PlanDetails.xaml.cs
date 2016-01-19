@@ -33,7 +33,12 @@ namespace TripPlanner.Pages
         {
             var plan = (Plans)e.Parameter;
             planDate.Text = "From " + plan.StartDate.Date.ToString("d", DateTimeFormatInfo.InvariantInfo) + " To " + plan.EndDate.Date.ToString("d", DateTimeFormatInfo.InvariantInfo);
-            location.Text = "in " + plan.Location; 
+            location.Text = "in " + plan.Location;
+            testMaxDay.Text = plan.MaxDay.ToString();
+            if(plan.MaxDay == 0)
+            {
+                addNewEvent.IsEnabled = false;
+            }
         }
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {
@@ -49,17 +54,17 @@ namespace TripPlanner.Pages
         {
 
         }
-        private void deletePlan_Click(object sender, RoutedEventArgs e)
+        private void deleteEvent_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void selectPlan_Click(object sender, RoutedEventArgs e)
+        private void selectEvent_Click(object sender, RoutedEventArgs e)
         {
             addNewEvent.Visibility = Visibility.Collapsed;
-            selectPlan.Visibility = Visibility.Collapsed;
-            editPlan.Visibility = Visibility.Visible;
-            deletePlan.Visibility = Visibility.Visible;
+            selectEvent.Visibility = Visibility.Collapsed;
+            editEvent.Visibility = Visibility.Visible;
+            deleteEvent.Visibility = Visibility.Visible;
             cancelPlan.Visibility = Visibility.Visible;
             addFavorite.Visibility = Visibility.Collapsed;
 
@@ -68,19 +73,24 @@ namespace TripPlanner.Pages
         private void cancelPlan_Click(object sender, RoutedEventArgs e)
         {
             addNewEvent.Visibility = Visibility.Visible;
-            selectPlan.Visibility = Visibility.Visible;
-            editPlan.Visibility = Visibility.Collapsed;
-            deletePlan.Visibility = Visibility.Collapsed;
+            selectEvent.Visibility = Visibility.Visible;
+            editEvent.Visibility = Visibility.Collapsed;
+            deleteEvent.Visibility = Visibility.Collapsed;
             cancelPlan.Visibility = Visibility.Collapsed;
             addFavorite.Visibility = Visibility.Visible;
         }
 
         private void addNewEvent_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(DayEvents));
         }
 
         private void addFavorite_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void editEvent_Click(object sender, RoutedEventArgs e)
         {
 
         }

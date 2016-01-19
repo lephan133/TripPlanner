@@ -28,6 +28,10 @@
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock x:Name="location" FontSize="20"/>
             </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock x:Name="testMaxDay" FontSize="20"/>
+            </StackPanel>
         </StackPanel>
         <SplitView Name="mySplitView" 
                    Grid.Row="1" 
@@ -78,29 +82,29 @@
                           Label="New"
                           ToolTipService.ToolTip="Click here to add this plan to Favorite list."
                           Click="addFavorite_Click" Background="{x:Null}" Foreground="#FFE2AF01"/>
-            <AppBarButton x:Name="selectPlan"
+            <AppBarButton x:Name="selectEvent"
                           Icon="SelectAll"
                           Label="Select"
                           ToolTipService.ToolTip="Click here to select s plan."
                           Background="Transparent"
-                          Click="selectPlan_Click"/>
+                          Click="selectEvent_Click"/>
 
-            <AppBarButton x:Name="deletePlan"
+            <AppBarButton x:Name="deleteEvent"
                           Icon="Delete"
                           Label="Delete"
                           ToolTipService.ToolTip="Click here to deleted selected plans."
-                          Click="deletePlan_Click" Foreground="Red" Visibility="Collapsed"
+                          Click="deleteEvent_Click" Foreground="Red" Visibility="Collapsed"
                           />
-            <AppBarButton x:Name="editPlan"
+            <AppBarButton x:Name="editEvent"
                           Icon="Edit"
                           Label="Edit"
                           ToolTipService.ToolTip="Click here to edit a plan"
-                          Click="deletePlan_Click" Foreground="Black" Visibility="Collapsed"/>
+                          Click="editEvent_Click" Foreground="Black" Visibility="Collapsed"/>
             <AppBarButton x:Name="cancelPlan"
-                          Icon="Back"
-                          Label="Back"
+                          Icon="Cancel"
+                          Label="Cancel"
                           ToolTipService.ToolTip="Click here cancel selection"
-                          Click="cancelPlan_Click" Foreground="Black" Visibility="Collapsed"/>
+                          Click="cancelPlan_Click" Foreground="Red" Visibility="Collapsed"/>
 
 
         </CommandBar>

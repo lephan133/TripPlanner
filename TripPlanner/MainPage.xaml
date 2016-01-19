@@ -81,10 +81,10 @@
                           ToolTipService.ToolTip="Click here to edit a plan"
                           Click="deletePlan_Click" Foreground="Black" Visibility="Collapsed"/>
             <AppBarButton x:Name="cancelPlan"
-                          Icon="Back"
-                          Label="Back"
+                          Icon="Cancel"
+                          Label="Cancel"
                           ToolTipService.ToolTip="Click here cancel selection"
-                          Click="cancelPlan_Click" Foreground="Black" Visibility="Collapsed"/>
+                          Click="cancelPlan_Click" Foreground="Red" Visibility="Collapsed"/>
             
             
         </CommandBar>

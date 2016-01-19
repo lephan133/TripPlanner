@@ -91,5 +91,8 @@
         <Flyout x:Key="validationFlyout">
             <TextBlock Text="Please enter Location." Foreground="Red"/>
         </Flyout>
+        <Flyout x:Key="endDateValidation">
+            <TextBlock Text="Start Date cannot be greater than End Date" Foreground="Red"/>
+        </Flyout>
     </Page.Resources>
 </Page>

@@ -62,6 +62,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Margin" />
       <RootEvent Name="Click" />
     </RootType>
@@ -99,6 +100,20 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="TripPlanner.Pages.AddNewPlan" />
+    <RootType FullName="TripPlanner.Pages.DayEvents" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RichEditBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Time" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="TripPlanner.Pages.NewActivities" />
     <RootType FullName="TripPlanner.Pages.PlanDetails" />
   </Roots.RootTypes>
 </Roots>

@@ -12,6 +12,7 @@ namespace TripPlanner.Classes
         private DateTime endDate;
         private string location;
         private double budget;
+        private int maxDay;
 
         public DateTime StartDate
         {
@@ -33,6 +34,11 @@ namespace TripPlanner.Classes
             get { return budget; }
             set { budget = value; }
         }
+        public int MaxDay
+        {
+            get { return maxDay; }
+            set { maxDay = value; }
+        }
         public Plans()
         {
             startDate = DateTime.Today;
@@ -46,6 +52,27 @@ namespace TripPlanner.Classes
             EndDate = endDate;
             Location = location;
             Budget = budget;
+            MaxDay = CalculateMaxDay(startDate, endDate);
+            
         }
+
+        public int CalculateMaxDay(DateTime startDate, DateTime endDate)
+        {
+            int maxDay = 0;
+            if (startDate.Date > endDate.Date)
+            {
+                maxDay = 0;
+            }
+            else if(startDate.Date == endDate.Date)
+            {
+                maxDay = 1;
+            }
+            else {
+                TimeSpan timeSpan = endDate.Date - startDate.Date;
+                maxDay = timeSpan.Days;
+            }
+            return maxDay;
+        }
+        
     }
 }
