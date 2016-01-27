@@ -5,7 +5,11 @@
     xmlns:local="using:TripPlanner.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:TripPlanner.Classes"
     mc:Ignorable="d">
+    <Page.Resources>
+        
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -32,7 +36,20 @@
             <StackPanel HorizontalAlignment="Center">
                 <TextBlock x:Name="testMaxDay" FontSize="20"/>
             </StackPanel>
+            <StackPanel>
+                <ListBox ItemsSource="{x:Bind DaysList}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate x:DataType="data:Days">
+                            <StackPanel>
+                                <TextBlock Text="{x:Bind DayNo}"/>
+                                <TextBlock Text="{x:Bind NumberOfEvents}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
         </StackPanel>
+        
         <SplitView Name="mySplitView" 
                    Grid.Row="1" 
                    OpenPaneLength="370" 

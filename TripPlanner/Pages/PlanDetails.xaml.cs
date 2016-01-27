@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using TripPlanner.Classes;
 using System.Globalization;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,6 +29,7 @@ namespace TripPlanner.Pages
         {
             this.InitializeComponent();
         }
+        public ObservableCollection<Days> DaysList; 
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -39,6 +41,8 @@ namespace TripPlanner.Pages
             {
                 addNewEvent.IsEnabled = false;
             }
+            DaysList = DayList.getDayList(plan.StartDate, plan.EndDate);
+            
         }
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {

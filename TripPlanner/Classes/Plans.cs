@@ -69,7 +69,7 @@ namespace TripPlanner.Classes
             }
             else {
                 TimeSpan timeSpan = endDate.Date - startDate.Date;
-                maxDay = timeSpan.Days;
+                maxDay = timeSpan.Days + 1;
             }
             return maxDay;
         }
