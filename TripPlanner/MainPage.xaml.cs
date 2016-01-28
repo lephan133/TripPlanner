@@ -28,6 +28,14 @@ namespace TripPlanner
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                backBtn.Visibility = Visibility.Visible;
+            }
+        }
+
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             mySplitView.IsPaneOpen = !mySplitView.IsPaneOpen;
@@ -65,6 +73,14 @@ namespace TripPlanner
             editPlan.Visibility = Visibility.Collapsed;
             deletePlan.Visibility = Visibility.Collapsed;
             cancelPlan.Visibility = Visibility.Collapsed;
+        }
+
+        private void backBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
         }
     }
 }

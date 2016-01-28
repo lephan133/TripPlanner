@@ -27,6 +27,10 @@ namespace TripPlanner.Pages
         {
             this.InitializeComponent();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            
+        }
 
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {
@@ -94,5 +98,7 @@ namespace TripPlanner.Pages
             //    Frame.Navigate(typeof(MainPage));
             //}
         }
+        
+
     }
 }

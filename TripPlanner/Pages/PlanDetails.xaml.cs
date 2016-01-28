@@ -33,6 +33,10 @@ namespace TripPlanner.Pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            if (Frame.CanGoBack)
+            {
+                backBtn.Visibility = Visibility.Visible;
+            }
             var plan = (Plans)e.Parameter;
             planDate.Text = "From " + plan.StartDate.Date.ToString("d", DateTimeFormatInfo.InvariantInfo) + " To " + plan.EndDate.Date.ToString("d", DateTimeFormatInfo.InvariantInfo);
             location.Text = "in " + plan.Location;
@@ -42,6 +46,7 @@ namespace TripPlanner.Pages
                 addNewEvent.IsEnabled = false;
             }
             DaysList = DayList.getDayList(plan.StartDate, plan.EndDate);
+            
             
         }
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -100,10 +105,23 @@ namespace TripPlanner.Pages
 
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    Days day = (Days)dayListBox.SelectedItem;
+        //    Frame.Navigate(typeof(DayEvents),day);
+        //}
+
+        private void GridView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Days day = (Days)dayListBox.SelectedItem;
+            Days day = (Days)e.ClickedItem;
             Frame.Navigate(typeof(DayEvents),day);
+        }
+        private void backBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
         }
     }
 }

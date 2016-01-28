@@ -35,9 +35,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Items" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
@@ -119,6 +116,12 @@
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="TripPlanner.Pages.NewActivities" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
