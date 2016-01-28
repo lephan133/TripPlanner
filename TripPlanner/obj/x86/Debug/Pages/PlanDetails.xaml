@@ -37,15 +37,16 @@
                 <TextBlock x:ConnectionId='8' x:Name="testMaxDay" FontSize="20"/>
             </StackPanel>
             <StackPanel>
-                <ListBox x:ConnectionId='4'                                >
+                <ListBox x:ConnectionId='4' x:Name="dayListBox"                                 Background="White"                                            >
                     <ListBox.ItemTemplate>
                         <DataTemplate                       >
-                            <StackPanel x:ConnectionId='5'>
-                                <TextBlock x:ConnectionId='6'                      />
+                            <StackPanel x:ConnectionId='5' MinWidth="400" Background="Azure">
+                                <TextBlock x:ConnectionId='6'                       FontSize="25"/>
                                 <TextBlock x:ConnectionId='7'                               />
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
+                    
                 </ListBox>
             </StackPanel>
         </StackPanel>

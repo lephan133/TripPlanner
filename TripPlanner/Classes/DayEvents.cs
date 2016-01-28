@@ -13,5 +13,6 @@ namespace TripPlanner.Classes
         public DateTime EndTime { get; set; }
         public string Locations { get; set; }
         public string Notes { get; set; }
+        public Guid DayEventID { get; set; }
     }
 }

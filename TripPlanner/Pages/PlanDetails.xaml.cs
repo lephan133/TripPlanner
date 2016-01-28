@@ -86,17 +86,24 @@ namespace TripPlanner.Pages
 
         private void addNewEvent_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(DayEvents));
+            Days day = new Days("", "Add New Day");
+            Frame.Navigate(typeof(DayEvents),day);
         }
 
         private void addFavorite_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void editEvent_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Days day = (Days)dayListBox.SelectedItem;
+            Frame.Navigate(typeof(DayEvents),day);
         }
     }
 }

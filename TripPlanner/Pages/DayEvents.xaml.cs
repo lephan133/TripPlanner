@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using TripPlanner.Classes;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +26,11 @@ namespace TripPlanner.Pages
         public DayEvents()
         {
             this.InitializeComponent();
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var day = (Days)e.Parameter;
+            pageTitle.Text = day.DayNo;
         }
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {

@@ -39,6 +39,8 @@ namespace TripPlanner.Classes
             get { return maxDay; }
             set { maxDay = value; }
         }
+
+        public Guid PlanID { get; set; }
         public Plans()
         {
             startDate = DateTime.Today;

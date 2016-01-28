@@ -12,6 +12,8 @@ namespace TripPlanner.Classes
     {
         public string NumberOfEvents { get; set; }
         public string DayNo { get; set; }
+
+        public Guid DayID { get; set; }
         public Days(string numberofevents, string dayno)
         {
             NumberOfEvents = numberofevents;
