@@ -45,7 +45,10 @@ namespace TripPlanner.Pages
 
         private void cancelNewActivity_Click(object sender, RoutedEventArgs e)
         {
-
+            if(Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
         }
         
     }
