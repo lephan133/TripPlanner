@@ -33,10 +33,6 @@ namespace TripPlanner.Pages
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (Frame.CanGoBack)
-            {
-                backBtn.Visibility = Visibility.Visible;
-            }
             var plan = (Plans)e.Parameter;
             planDate.Text = "From " + plan.StartDate.Date.ToString("d", DateTimeFormatInfo.InvariantInfo) + " To " + plan.EndDate.Date.ToString("d", DateTimeFormatInfo.InvariantInfo);
             location.Text = "in " + plan.Location;
@@ -116,12 +112,6 @@ namespace TripPlanner.Pages
             Days day = (Days)e.ClickedItem;
             Frame.Navigate(typeof(DayEvents),day);
         }
-        private void backBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack();
-            }
-        }
+
     }
 }

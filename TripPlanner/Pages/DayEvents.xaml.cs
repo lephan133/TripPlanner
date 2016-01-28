@@ -29,10 +29,6 @@ namespace TripPlanner.Pages
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (Frame.CanGoBack)
-            {
-                backBtn.Visibility = Visibility.Visible;
-            }
             var day = (Days)e.Parameter;
             pageTitle.Text = day.DayNo;
         }
@@ -79,12 +75,6 @@ namespace TripPlanner.Pages
         {
 
         }
-        private void backBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack();
-            }
-        }
+
     }
 }

@@ -20,9 +20,8 @@
         <RelativePanel>
             <StackPanel Orientation="Horizontal" Padding="5" BorderThickness="1" >
                 <Button x:ConnectionId='11' Name="hamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" FontSize="36"                               Background="{x:Null}"/>
-                <Button x:ConnectionId='12' Name="backBtn" FontFamily="Segoe MDL2 Assets" Content="&#xE0A6;" FontSize="30"                       Visibility="Collapsed" Background="{x:Null}"/>
                 <TextBlock Text="Plan Details" FontFamily="Segoe UI" FontSize="30" Margin="20,5,0,0"/>
-                <Button x:ConnectionId='13' Name="editPlanBtn" FontFamily="Segoe MDL2 Assets" Content="&#xE104;" FontSize="25" Background="{x:Null}" Margin="50,0,0,0"                          />
+                <Button x:ConnectionId='12' Name="editPlanBtn" FontFamily="Segoe MDL2 Assets" Content="&#xE104;" FontSize="25" Background="{x:Null}" Margin="50,0,0,0"                          />
             </StackPanel>
         </RelativePanel>
         <StackPanel Grid.Row="1">
@@ -102,35 +101,35 @@
     </Grid>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:ConnectionId='14' x:Name="addNewEvent"
+            <AppBarButton x:ConnectionId='13' x:Name="addNewEvent"
                           Icon="Add"
                           Label="New"
                           ToolTipService.ToolTip="Click here to add a new activity."
                                                     Background="Transparent" Foreground="#FF00B83A"/>
-            <AppBarButton x:ConnectionId='15' x:Name="addFavorite"
+            <AppBarButton x:ConnectionId='14' x:Name="addFavorite"
                           Icon="Favorite"
                           Label="New"
                           ToolTipService.ToolTip="Click here to add this plan to Favorite list."
                                                     Background="{x:Null}" Foreground="#FFE2AF01"/>
-            <AppBarButton x:ConnectionId='16' x:Name="selectEvent"
+            <AppBarButton x:ConnectionId='15' x:Name="selectEvent"
                           Icon="SelectAll"
                           Label="Select"
                           ToolTipService.ToolTip="Click here to select s plan."
                           Background="Transparent"
                                                    />
 
-            <AppBarButton x:ConnectionId='17' x:Name="deleteEvent"
+            <AppBarButton x:ConnectionId='16' x:Name="deleteEvent"
                           Icon="Delete"
                           Label="Delete"
                           ToolTipService.ToolTip="Click here to deleted selected plans."
                                                     Foreground="Red" Visibility="Collapsed"
                           />
-            <AppBarButton x:ConnectionId='18' x:Name="editEvent"
+            <AppBarButton x:ConnectionId='17' x:Name="editEvent"
                           Icon="Edit"
                           Label="Edit"
                           ToolTipService.ToolTip="Click here to edit a plan"
                                                   Foreground="Black" Visibility="Collapsed"/>
-            <AppBarButton x:ConnectionId='19' x:Name="cancelPlan"
+            <AppBarButton x:ConnectionId='18' x:Name="cancelPlan"
                           Icon="Cancel"
                           Label="Cancel"
                           ToolTipService.ToolTip="Click here cancel selection"
